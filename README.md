@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lameist Website</title>
+  <title>Lameist03 Webpage</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -43,17 +43,17 @@
 
   <div id="home" class="content active">
     <h2>Home</h2>
-    <p>Welcome to my personal website!</p>
+    <p>Senior Computer Engineering Jasem Alsuwaidi is ready to explore the vast and complex background of computers using the tools and knowledge gained within Khalifa University. Currently partaking in an intership opportunity in Security Industry and Regulation Agency. You will find all of my projects in the projects page and their respective links under!</p>
   </div>
 
   <div id="about" class="content">
     <h2>About Me</h2>
-    <p>Hello! I'm a developer with a passion for building things on the web.</p>
+    <p>I am passionate about learning new techniques and tools to create and develop programs, web servers and pages, networks and much more. I enjoy playing competitive games and hope to be one of the best in both Engineering and gaming!</p>
   </div>
 
   <div id="projects" class="content">
     <h2>Projects</h2>
-    <p>Here are some projects I've worked on recently.</p>
+    <p>Here are some projects I've worked on over the years.</p>
   </div>
 
   <script>
@@ -65,5 +65,3 @@
   </script>
 
 </body>
-</html>
-
