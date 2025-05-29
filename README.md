@@ -4,7 +4,7 @@
   <title>Lameist03 Webpage</title>
   <style>
     body {
-      font-family: TimesNewRoman, sans-serif;
+      font-family: ComicSans, sans-serif;
       margin: 0;
       padding: 0;
     }
