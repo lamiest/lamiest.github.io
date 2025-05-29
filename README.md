@@ -58,6 +58,10 @@
     <p>This project revolves around the use of the ESP-WROOM-32 touch modules within the pins of the microcontroller. The main purpose is to be able to use the touch sensors to detect specifically where (which pin) the detection occurred in and to increment the detection count from the EEPROM. This was done in the Arduino IDE in the language of C++. Ensure that the board can communicate with the Host on COM(1-5) in Serial Communication. Respective drivers for the communication may be needed.</p>
     <h3>ESP-WROOM-32 Web Server and Basic Calculator</h3>
     <p>This project was made on the ESP-WROOM-32 as a basic functioning web server and a calculator. The main purpose is to demonstrate the capabilities of the WiFi module of the ESP32 to function as a local web server and to show that data can be sent/received on WiFi.</p>
+
+    <img src="https://github.com/user-attachments/assets/e3dd1495-492b-45d6-a313-ad6510701241" alt="Alt text" width="10%" height="10%"> <br>
+    <img src="https://github.com/user-attachments/assets/6ef9f766-2cb4-44d0-adfa-83d4a6d9d22a" alt="Alt text" width="20%" height="20%"> <br>
+    <img src="https://github.com/user-attachments/assets/9e9ca487-0941-4810-a7cb-6a665259ea7a" alt="Alt text" width="20%" height="20%"> <br>
     
 ![IMG_8380](https://github.com/user-attachments/assets/e3dd1495-492b-45d6-a313-ad6510701241)
     
