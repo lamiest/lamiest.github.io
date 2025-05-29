@@ -44,7 +44,7 @@
   <div id="home" class="content active">
     <h2>Home</h2>
     <p>Senior Computer Engineering Jasem Alsuwaidi is ready to explore the vast and complex background of computers using the tools and knowledge gained within Khalifa University. Currently partaking in an intership opportunity in Security Industry Regulation Agency. You will find all of my projects in the projects page and their respective links under!</p>
-    Contacts:<br>
+    <h3>Contacts:</h3>
     Gmail: jasem.a.alsuwaidi@gmail.com<br>
     GitHub: https://github.com/lamiest <br>
     Instagram: https://www.instagram.com/suwaidi03/ <br>
