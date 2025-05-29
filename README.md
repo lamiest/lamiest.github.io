@@ -1,3 +1,6 @@
+layout: page
+title: "Projects"
+permalink: /project
 <html>
 <body>
 <h1>Hello World</h1>
