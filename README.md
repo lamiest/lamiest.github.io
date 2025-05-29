@@ -4,7 +4,7 @@
   <title>Lameist03 Webpage</title>
   <style>
     body {
-      font-family: ComicSans, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
@@ -54,6 +54,10 @@
   <div id="projects" class="content">
     <h2>Projects</h2>
     <p>Here are some projects I've worked on over the years.</p>
+    <h3>ESP-WROOM-32 Touch Detector and Counter</h3>
+    <p>This project revolves around the use of the ESP-WROOM-32 touch modules within the pins of the microcontroller. The main purpose is to be able to use the touch sensors to detect specifically where (which pin) the detection occurred in and to increment the detection count from the EEPROM. This was done in the Arduino IDE in the language of C++. Ensure that the board can communicate with the Host on COM(1-5) in Serial Communication. Respective drivers for the communication may be needed.</p>
+    <h3>ESP-WROOM-32 Web Server and Basic Calculator</h3>
+    <p>This project was made on the ESP-WROOM-32 as a basic functioning web server and a calculator. The main purpose is to demonstrate the capabilities of the WiFi module of the ESP32 to function as a local web server and to show that data can be sent/received on WiFi.</p>
   </div>
 
   <script>
