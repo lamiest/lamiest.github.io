@@ -68,21 +68,31 @@ client.println("}");
 - IP may change between web server reboots
 - Connection changes will affect the IP of host
 - Inability for user to type in the results window
+<div style="text-align: center;">
 
-![Home Page](../images/Calc1.png)
+<img src="../images/Calc1.png" alt="Calculator" width="200" height="400">
+
+</div>
 
 ### Testing Multiple Input digits separated by "+"
 - Testing different inputs of different sizes (digits)
 - Testing the separation function due to "+"
 
-![Multiple Digits](../images/Calc2.png)
+<div style="text-align: center;">
+
+<img src="../images/Calc2.png" alt="Calculator" width="200" height="400">
+
+</div>
 
 ### Final result of Calculation
 - Display the sum in the textbox
 - Allow for continuation of addition by inputting "+"
 - Clear and remove displayed sum from memory if a digit was inputted
+<div style="text-align: center;">
 
-![Final Result](../images/Calc3.png)
+<img src="../images/Calc3.png" alt="Calculator" width="200" height="400">
+
+</div>
 
 ## ESP32 Touch Detector and counter using EEPROM
 
