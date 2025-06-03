@@ -79,3 +79,19 @@ client.println("}");
 - Clear and remove displayed sum from memory if a digit was inputted
 
 ![Final Result](../images/Calc3.png)
+
+## ESP32 Touch Detector and counter using EEPROM
+
+### Introduction
+This project revolves around the use of the ESP-WROOM-32 touch modules within the pins of the microcontroller. The main purpose is to be able to use the touch sensors to detect specifically where (which pin) the detection occurred in and to increment the detection count from the EEPROM. This was done in the Arduino IDE in the language of C++. Ensure that the board can communicate with the Host on COM(1-5) in Serial Communication. Respective drivers for the communication may be needed.
+### Required Libraries
+- esp32 by expressif (Board Library) <br>
+- ArduinoJson by Benoit Blanchon <br>
+
+### Running the Code
+
+The code serves as foundational information to test the functionality of the touch module found within the pins of ESP32. To start off, we included the Arduino and EEPROM header files and defined the pins (2,4,13) to be the inputs of our program. An integer value (30) served as the threshold value for when a touch is detected by the pin, otherwise, bogus values with be given and attempted to be handled by the program which can lead to issues.
+
+#### EEPROM Library
+
+The main functions used in the program from the EEPROM library is EEPROM.begin(size) which sets the value saved data by integer "size" bytes. At the start of our loop(), Detections is set by the data found in address 0 of the EEPROM then it is printed in a String() parser. We used EEPROM.read(0) to read from address 0 and save it in the integer variable Detections. EEPROM.write(0, Detections) was used to overwrite the data in address 0 by the new incremented value of detections such that we may be able to conserve the count between resets. EEPROM.commit() is used to save the changed EEPROM.write() values between resets.
