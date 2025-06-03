@@ -3,10 +3,10 @@ This project was made on the ESP-WROOM-32 as a basic functioning web server and 
 
 ### Required Libraries
 
-1) Async- AsyncEspFsWebserver by Tolentino
-2) ESPAsyncWebServer by lacamera
-3) esp32 by Espressif Systems (Board Library)
-4) Arduino ESP32 Boards by Arduino
+1) Async- AsyncEspFsWebserver by Tolentino <br>
+2) ESPAsyncWebServer by lacamera <br>
+3) esp32 by Espressif Systems (Board Library)<br>
+4) Arduino ESP32 Boards by Arduino<br>
 
 ### WiFi Library Use
 
@@ -16,10 +16,45 @@ while(WiFi.status() != WL_CONNECTED) will check if the board has successfully co
 ### Scripts (HTML)
 Within the Arduino IDE, you may notice that we used HTML scripts. This is because we want to make the web page function as our intended calculator project. There are 3 important scripts/functions we added in the project: <br>
 1) add(val) <br>
+```cpp
+client.println("function add(val) {");
+client.println("  let display = document.getElementById('display');"); // Find display value
+client.println("  if (val === '+') {resultShown = false;};"); // Add next digits 
+client.println("  if (resultShown && val !== '+') {"); // User re-inputs different numbers, reset calculator
+client.println("    display.value = '';");  // Clear previous result
+client.println("    resultShown = false;"); // Result is not shown in display
+client.println("  }");
+client.println("  if (display.value === '' && val === '+') return;");  // Append '+' and first input and check if display is empty
+client.println("  display.value += val;");                     
+client.println("}");
+```
 <i>Takes the button input ids from the textbox and converts them to numbers which is then added to each other within the textbox</i> <br>
+
 2) clearDisplay() <br>
+```cpp
+client.println("function clearDisplay() {");
+client.println("  document.getElementById('display').value = '';"); 
+client.println("  resultShown = false;");
+client.println("}");
+```
 <i>Removes all text in the calculator's textbox</i> <br>
+
 3) calculate() <br>
+
+```cpp
+          client.println("function calculate() {");
+          client.println("  let input = document.getElementById('display').value;");
+          client.println("  if (/^[0-9+]+$/.test(input)) {");
+          client.println("    let result = input.split('+').reduce((a,b) => Number(a) + Number(b),0);");
+          client.println("    document.getElementById('display').value = result;");
+          client.println("    resultShown = true;");
+          client.println("  } else {");
+          client.println("    document.getElementById('display').value = 'Error';");
+          client.println("    resultShown = true;");
+          client.println("  }");
+          client.println("}");
+```
+
 <i>Main function, calculates the added values and checks for validity of the inputs (Digits and '+' are the only whitlisted inputs)</i> <br>
 
 ### Running Test
@@ -36,7 +71,7 @@ Within the Arduino IDE, you may notice that we used HTML scripts. This is becaus
 - Testing different inputs of different sizes (digits)
 - Testing the separation function due to "+"
 <div align="center">
-    <img src="../images/Calc2.png" alt="Multiple Digits" width="400" height="900">
+    <img src="./images/Calc2.png" alt="Multiple Digits" width="400" height="900">
 </div>
 
 ### Final result of Calculation
@@ -44,5 +79,5 @@ Within the Arduino IDE, you may notice that we used HTML scripts. This is becaus
 - Allow for continuation of addition by inputting "+"
 - Clear and remove displayed sum from memory if a digit was inputted
 <div align="center">
-    <img src="../images/Calc3.png" alt="Final Result" width="400" height="900">
+    <img src="./images/Calc3.png" alt="Final Result" width="400" height="900">
 </div>
