@@ -3,5 +3,5 @@ Senior Computer Engineering Jasem Alsuwaidi is ready to explore the vast and com
 
 I am passionate about learning new techniques and tools to create and develop programs, web servers and pages, networks and much more. I enjoy playing competitive games and hope to be one of the best in both Engineering and gaming! I am a competitive person in general and I strive to hone my knowledge on all things electronic, digital and games. I have expertise in circuit analysis and circuit building, generating code test cases, employing software engineering techniques, and programming and troubleshooting Microprocessor/Embedded Systems
 
-[Instagram](https://instagram.com/suwaidi03)
-[GitHub](https://github.com/Lamiest)
+<img src="./images/instagram.png" alt="Instagram" width="15" height="15"> [Instagram](https://instagram.com/suwaidi03)
+<img src="./images/github.png" alt="Github" width="15" height="15"> [GitHub](https://github.com/Lamiest)
