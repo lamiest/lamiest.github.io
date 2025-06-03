@@ -112,32 +112,52 @@ In the ESP32, I used the function touchread(pin) to read from the desired pins t
 
 ### Running tests
 
+Appending the pins into a 3 bit value:
+```cpp
+  //check if pins meet the threshold set (30). Anything below means there was a touch detection.
+  if(t1 < STRONGTOUCH){
+    TouchDetected |= (1<<0); // Bit 0: Pin 4
+    }
+  if(t2 < STRONGTOUCH){
+    TouchDetected |= (1<<1); // Bit 1: Pin 13
+    }
+  if(t3  < STRONGTOUCH){
+    TouchDetected |= (1<<2); // Bit 3: Pin 2
+    }
+  }
+```
+
+For handling multiple detections a switch case was implemented:
+```cpp
+   else{ // handles multiple detections at once.
+    switch(TouchDetected){ //0b000: 2, 13, 4
+```
 #### Testing individual pins
 
 - 1 second delay per touch detection
 - System is in polling mode awaiting a touch to be read
 - Strong touch only can be detected to avoid inconsistency and inaccurate reading
 
-![Individual Pins](..images/Individualpins.png)
+![IndividualPins](../images/Individualpins.png)
 
 #### Double Pins
 
 - Same as the individual pins but checking if the system can detect 2 simultaneous pin sensors.
 - Detect count should increment by 2
 
-![Double Pins](..images/Doublepins.png)
+![Double Pins](../images/Doublepins.png)
 
 #### All Pins
 
 - Test if all pins can be detected simultaneously
 - Detect count incremented by 3
 
-![All Pins](..images/Allpins.png)
+![All Pins](../images/Allpins.png)
 
 #### EEPROM Detection Count Preservation
 
 - Detection count should continue at the point it was before reset.
 - Handle data integrity between resets
 
-![EEPROM Capability](..images/EEPROMcapability.png)
+![EEPROM Capability](../images/EEPROMcapability.png)
 
