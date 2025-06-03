@@ -63,21 +63,19 @@ client.println("}");
 - Connected to the Dynamic IP of the Host Web Server
 - IP may change between web server reboots
 - Connection changes will affect the IP of host
-<div align="center">
-    <img src="../images/Calc1.png" alt="Home page" width="400" height="900">
-</div>
+- Inability for user to type in the results window
+
+![Home Page](../images/Calc1.png)
 
 ### Testing Multiple Input digits separated by "+"
 - Testing different inputs of different sizes (digits)
 - Testing the separation function due to "+"
-<div align="center">
-    <img src="./images/Calc2.png" alt="Multiple Digits" width="400" height="900">
-</div>
+
+![Multiple Digits](../images/Calc2.png)
 
 ### Final result of Calculation
 - Display the sum in the textbox
 - Allow for continuation of addition by inputting "+"
 - Clear and remove displayed sum from memory if a digit was inputted
-<div align="center">
-    <img src="./images/Calc3.png" alt="Final Result" width="400" height="900">
-</div>
+
+![Final Result](../images/Calc3.png)
