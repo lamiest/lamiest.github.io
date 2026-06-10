@@ -10,12 +10,14 @@ I am passionate about learning new techniques and tools to create and develop pr
 
 ### Coursework and University Projects
 
-1) Banking System with Different User Types (Software)
-2) Research on applications of Artifical Intelligence on Businesses
-3) Access System Using Microcontroller (Software & Hardware) in Assembly and C++ languages
-4) Building and connecting circuits operational amplifiers
-5) Analysis of frequency using Bi-directional Junction Transistors and Metal-Oxide-Semiconductor Field Effect Transistors to control police siren leds.
-6) (On-going) Regenerative Breaking Embedded System to increase efficiency of electric bike range.
+- Banking System with Different User Types (Software)
+- Research on applications of Artifical Intelligence on Businesses
+- Access System Using Microcontroller (Software & Hardware) in Assembly and C++ languages
+- Building and connecting circuits operational amplifiers
+- Analysis of frequency using Bi-directional Junction Transistors and Metal-Oxide-Semiconductor Field Effect Transistors to control police siren leds.
+- Regenerative Breaking Embedded System to increase efficiency of electric bike range.
+- Remote shell creation and operation using pipes and synchronization techniques.
+- Built a 6-bit ID verification circuit using logical effort and circuit analysis for best case delay.
 
 ## Contacts
 
