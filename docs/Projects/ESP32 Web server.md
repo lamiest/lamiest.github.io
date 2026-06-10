@@ -68,28 +68,15 @@ client.println("}");
 - IP may change between web server reboots
 - Connection changes will affect the IP of host
 - Inability for user to type in the results window
-<div style="text-align: center;">
-
-<img src="../images/Calc1.png" alt="Calculator" width="200" height="400">
-
-</div>
+![Calc1](../images/Calc1.png)
 
 ### Testing Multiple Input digits separated by "+"
 - Testing different inputs of different sizes (digits)
 - Testing the separation function due to "+"
-
-<div style="text-align: center;">
-
-<img src="../images/Calc2.png" alt="Calculator" width="200" height="400">
-
-</div>
+![Calc2](../images/Calc2.png)
 
 ### Final result of Calculation
 - Display the sum in the textbox
 - Allow for continuation of addition by inputting "+"
 - Clear and remove displayed sum from memory if a digit was inputted
-<div style="text-align: center;">
-
-<img src="../images/Calc3.png" alt="Calculator" width="200" height="400">
-
-</div>
+![Calc3](../images/Calc3.png)
